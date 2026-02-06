@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+<h1 class="title">? Tic Tac Toe Pro</h1>
+
+<div class="scoreboard">
+<div>X Score: <span id="scoreX">0</span></div>
+<div>O Score: <span id="scoreO">0</span></div>
+</div>
+
+<div id="status" class="status">Player X Turn</div>
+
+<div class="board" id="board">
+<div class="cell" data-i="0"></div>
+<div class="cell" data-i="1"></div>
+<div class="cell" data-i="2"></div>
+<div class="cell" data-i="3"></div>
+<div class="cell" data-i="4"></div>
+<div class="cell" data-i="5"></div>
+<div class="cell" data-i="6"></div>
+<div class="cell" data-i="7"></div>
+<div class="cell" data-i="8"></div>
+</div>
+
+<div class="buttons">
+<button onclick="setMode('ai')">?? AI</button>
+<button onclick="setMode('multi')">?? Multiplayer</button>
+<button onclick="toggleDark()">?? Dark</button>
+<button onclick="restart()">?? Restart</button>
+</div>
+
+</div>
+
+<audio id="clickSound" src="https://www.soundjay.com/buttons/sounds/button-09.mp3"></audio>
+<audio id="winSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
